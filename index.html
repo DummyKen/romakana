@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Romakana | Ken</title>
+    <title>Romakana</title>
     <link rel="icon" href="https://cdn.freebiesupply.com/logos/large/2x/japan-1-logo-png-transparent.png">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h2>Romaji to kana practice</h2>
+    <h2>Romaji ⇔ kana practice</h2>
     <h3>| Hiragana |</h3>
     <div class="card">
-        <div class="romaji-box">
+        <!-- romaji list -->
+        <div id="romaji-box">
             <div class="romaji">nuruiocha</div>
             <div class="romaji">kyukyoku</div>
             <div class="romaji">unyojyoho</div>
@@ -99,7 +100,8 @@
             </div>
             
         </div>
-        <div class="answer">
+        <!-- kana(answer keys) list -->
+        <div id="answer">
             <div class="kana">ぬるいおちゃ</div>
             <div class="kana">くきょく</div>
             <div class="kana">うにょじょほ</div>
@@ -176,24 +178,31 @@
 
         </div>
     </div>
-    <button id='button1'>Hide Kana</button>
-    <button id="button2">Hide Romaji</button>
-    
-    <h3>| Katakana |</h3>
-    <!-- <p>No need.</p> -->
+    <button onclick="hideRoma()" id="hideroma">Show/Hide Romaji</button>
+    <button onclick="hideKana()" id="hidekana">Show/Hide Kana</button>
+    <footer>
+        <p>Created by <a href="https://github.com/DummyKen" target="_blank">Ken</a></p>
+    </footer>
+    <!-- for buttons -->
     <script>
-        var button1 = document.getElementById('button1'); // Assumes element with id='button'
-        var button2 = document.getElementById('button2'); // Assumes element with id='button'
-
-        button.onclick = function() {
-            var div = document.getElementsByClassName('answer');
-            if (div.style.display !== 'none') {
-                div.style.display = 'none';
+        function hideKana() {
+            var x = document.getElementById("answer");
+            if(x.style.visibility==="hidden"){
+                x.style.visibility="visible";
+            } else{
+                x.style.visibility="hidden";
+                
             }
-            else {
-                div.style.display = 'block';
-            }
+            
         };
+        function hideRoma(){
+            var y = document.getElementById("romaji-box");
+            if(y.style.visibility==="hidden"){
+                y.style.visibility="visible";
+            } else{
+                y.style.visibility="hidden";
+            }
+        }
     </script>
 </body>
 </html>
