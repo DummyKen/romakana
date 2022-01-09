@@ -96,12 +96,46 @@
             </div>
             <div class="romaji">Sono naka ni ame no hi mo kaze no hi mo ojiisan no yashiki e kite, kaguyahime o zehi yome ni hoshii to iu go nin no hito ga imashita.
             </div>
-            <div class="romaji">Dono hito mo mibun ga takaku taihen na okanemochi deshita.
+            <div class="romaji">Dono hito mo mibun ga takaku taihen na okanemochi deshita.</div>
+
+            <div class="romaji">man tsuki no hikari kagayaku naka o takaku takaku nobotte ikimashita
             </div>
-            
+            <div class="romaji">tennin tachi ni kakomareta kaguyahime wa
+            </div>
+            <div class="romaji">kaguyahime wa kite ita kimono o ojiisan ni watashite
+                kuruma ni norimashita</div>
+            <div class="romaji">douka kore o watashi to omotte taisetsu ni shite kudasai
+            </div>
+            <div class="romaji">otousama, okaasama, owakare desu. sayounara
+            </div>
+            <div class="romaji">kaguyahime wa niwa e deru to
+                tennin no hagoromo o matoimashita</div>
+            <div class="romaji">kaguyahime ga futari no soba o hanaremashita
+            </div>
+            <div class="romaji">sono totan, shimekitte ita yashiki no to ga oto mo naku aite,
+            </div>
+            <div class="romaji">kore made hime o sodatte kurete arigatou
+            </div>
+            <div class="romaji">taketori no okina, kaguyahime o mukae ni kimashita.
+            </div>
+            <div class="romaji">sumikitta koe ga hibiki watarimashita
+            </div>
+            <div class="romaji">niwa kara
+                sukoshi ue no tokoro de tomarimashita</div>
+            <div class="romaji">tennin tachi o noseta kumo ga
+            </div>
+            <div class="romaji">minna chikara ga nukete shimai,
+                doushite mo karada o ugokasu koto ga dekimasen</div>
+            <div class="romaji">kumo no ue ni wa kuruma o kakomu you ni shite
+                oozei no tennin tachi ga tatteimashita</div>
+            <div class="romaji">suru to ookina kumo ga yukkuri to orite kimashita
+            </div>
+            <div class="romaji">sora ga mahiru no you ni akaruku narimashita
+            </div>
+
         </div>
         <!-- kana(answer keys) list -->
-        <div id="answer">
+        <div id="kanabox">
             <div class="kana">ぬるいおちゃ</div>
             <div class="kana">くきょく</div>
             <div class="kana">うにょじょほ</div>
@@ -113,8 +147,8 @@
             <div class="kana">とおにょおびょお</div>
             <div class="kana">むりょ</div>
             <div class="kana">みょおじ</div>
-            <div class="kana">おかあさｎ</div>
-            <div class="kana">ろにｎ</div>
+            <div class="kana">おかあさん</div>
+            <div class="kana">ろにん</div>
             <div class="kana">りゅうがくせい</div>
             <div class="kana">くるま</div>
             <div class="kana">あした</div>
@@ -172,11 +206,25 @@
             <div class="kana">”かぐやひめおぜひともわたしのよめにください”おとこのひとたちわみんあておあわせてとのみまひた。</div>
             <div class="kana">そのなかにあめのひもかぜのひもおじいさんおやしきえきて、かぐやひめおぜひよめにほしいというごにんおひとがいました。</div>
             <div class="kana">どのひともみぶんがたかくたいへんあおかねもちでした。</div>
+            <div class="kana">まんげつ の ひかり かがやく なか を たかく たかく のぼって いきました</div>
+            <div class="kana">てんにん たち に かこまれた かぐやひめ は</div>
+            <div class="kana">かぐやひめわきていたきものをおじいさんにわたしてくるまにのりました</div>
+            <div class="kana">どうかこんをわたしとおもってたいせつにしてくだちい。</div>
+            <div class="kana">おとうさま、おかあさま、おわかれです。さようなら</div>
+            <div class="kana">かぐやひめわにわへでるとてんいよのはごろもをまといました。</div>
+            <div class="kana">かぐやひめがふたりのそばをはなれました。</div>
+            <div class="kana">そのとたん、しめきっていたやしきのとがおともなくあいて、</div>
+            <div class="kana">これまでひめをそだててくれてありがとう。</div>
+            <div class="kana">たけとうのおきな、かぐやひめをむかえにきました</div>
+            <div class="kana">すみきつたこえがひびきわたりました。</div>
+            <div class="kana">にわからすこしうえのところとまりました</div>
+            <div class="kana">てんいんたちをのせたくもが</div>
+            <div class="kana">みんあちからがぬけてしまい、どうしてもからだをうごかすことができません。</div>
+            <div class="kana">くものうえにはくるまをかこむようにしておおぜいのてんいんたちがたっていました。</div>
+            <div class="kana">するとおおきなくもがゆっくりとおりてきました。</div>
+            <div class="kana">そらがまひるのようにあかるくなりました。</div>
 
-
-
-
-        </div>
+    </div>
     </div>
     <button onclick="hideRoma()" id="hideroma">Show/Hide Romaji</button>
     <button onclick="hideKana()" id="hidekana">Show/Hide Kana</button>
@@ -186,7 +234,7 @@
     <!-- for buttons -->
     <script>
         function hideKana() {
-            var x = document.getElementById("answer");
+            var x = document.getElementById("kanabox");
             if(x.style.visibility==="hidden"){
                 x.style.visibility="visible";
             } else{
