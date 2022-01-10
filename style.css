@@ -21,7 +21,16 @@ body{
     margin: 0;
     padding: 0;
 }
-h2{
+nav{
+    display: flex;
+    
+}
+nav img{
+    width: 100px;
+    height: 100px;
+}
+
+nav h2{
     text-align: center;
     margin: 20px;
 }
